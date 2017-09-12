@@ -8,9 +8,11 @@
 	    <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
 	    <script src="/app.js"></script>
 	</head>
+
 	<body>
 		<div class="container">
 			<nav class="navbar navbar-default" role="navigation">
+
 			  <div class="navbar-header">
 			    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 			      <span class="sr-only">Toggle navigation</span>
@@ -20,22 +22,20 @@
 			    </button>
 			    <a class="navbar-brand" href="/">Pizza Shop</a>
 			  </div>
+
 			  <div class="navbar-collapse collapse">
 			    <ul class="nav navbar-nav">
 			      <li><a href="/about">История</a></li>
 			      <li><a href="/something">Something</a></li>
 			      <li><a href="/contacts">Contacts</a></li>
 			    </ul>
-			  </div><!--/.nav-collapse -->
+			  </div>
 			</nav>
+		<div>
 
-			<div>
-			      <%if @error && @error.length > 0 then %>
-			          <div class="alert alert-danger"><%=@error%></div>
-			      <% end %>
-			      <%= yield %>
-			</div>
-
-	</div>
+      <%if @error && @error.length > 0 then %>
+          <div class="alert alert-danger"><%=@error%></div>
+      <% end %>
+      <%= yield %>
   </body>
 </html>
