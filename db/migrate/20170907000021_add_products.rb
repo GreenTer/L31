@@ -7,7 +7,7 @@ class AddProducts < ActiveRecord::Migration[5.1]
   		:size => 30,
   		:is_spicy => false,
   		:is_best_offer => true,
-  		:path_to_image => '/image/barbecue.jpg'
+  		:path_to_image => '/images/barbecue.jpg'
   		})
 
   	Product.create ({
@@ -17,7 +17,7 @@ class AddProducts < ActiveRecord::Migration[5.1]
   		:size => 30,
   		:is_spicy => false,
   		:is_best_offer => false,
-  		:path_to_image => '/image/ranch.jpg'
+  		:path_to_image => '/images/ranch.jpg'
   		})
 
   	Product.create ({
@@ -27,7 +27,7 @@ class AddProducts < ActiveRecord::Migration[5.1]
   		:size => 30,
   		:is_spicy => false,
   		:is_best_offer => true,
-  		:path_to_image => '/image/village.jpg'
+  		:path_to_image => '/images/village.jpg'
   		})
   end
 end
