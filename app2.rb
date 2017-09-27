@@ -13,9 +13,15 @@ loop do
 
 	puts hh.inspect
 	puts '================='
-
+=begin	
+	total = 0
 	hh.each do |key, value| 	# посчитать общее колличество добавленных вещей в корзину
 		total = total + value
+	end
+=end
+
+	hh.each.values do |key|
+		puts key
 	end
 
 	puts "Total items in cart: #{total}"
