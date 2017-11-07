@@ -10,8 +10,6 @@ s1.each do |x|
 
 	s3 = s2[0].split(/_/)
 	puts s3.inspect
-	key = s3[1]
-	value = s2[1]
 
-	puts "Пиццы номер: #{key}, колличество: #{value}"
+	puts "Пицца: #{s3[1]}, колличество #{s2[1]}"
 end
