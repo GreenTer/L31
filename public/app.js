@@ -10,11 +10,11 @@ function add_to_cart(id)
 	// вывод количество товаров в корзине
 	alert('Колличестов пицц: ' + cart_get_number_of_items());
 
-	update_orders_inpuut();
+	update_orders_input();
 	update_orders_button();
 }
 
-function update_orders_inpuut()
+function update_orders_input()
 {
 	var orders = cart_get_orders();
 	$('#orders_input').val(orders);
@@ -22,7 +22,7 @@ function update_orders_inpuut()
 
 function update_orders_button()
 {
-	var text = 'Cart(' + cart_get_number_of_items() + ')';
+	var text = 'Корзина(' + cart_get_number_of_items() + ')';
 	$('#orders_button').val(text);
 }
 
