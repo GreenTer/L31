@@ -33,7 +33,7 @@
 			    	<li>
 			    		<form action="/cart" method="post">
 			    			<input id="orders_input" name="orders" type="hidden"></input>
-			    			<input id="orders_button" type="submit" class="btn btn-primary btn-large" value="Корзина"></input>
+			    			<input id="orders_button" type="submit" class="btn btn-primary btn-large"></input>
 			    		</form>
 			    	</li>
 			    </ul>
@@ -47,3 +47,13 @@
       <%= yield %>
   </body>
 </html>
+
+<script type="text/javascript">
+	
+	$(function(){
+
+		update_orders_input();
+		update_orders_button();
+
+	});
+</script>

@@ -8,7 +8,7 @@ function add_to_cart(id)
 	window.localStorage.setItem(key, x);
 
 	// вывод количество товаров в корзине
-	alert('Колличестов пицц: ' + cart_get_number_of_items());
+	// alert('Колличестов пицц: ' + cart_get_number_of_items());
 
 	update_orders_input();
 	update_orders_button();
