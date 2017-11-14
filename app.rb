@@ -26,6 +26,7 @@ post '/cart' do
 		# id, cnt
 		item[0] = Product.find(item[0])
 	end
+	
 	erb :cart
 end
 
@@ -45,6 +46,5 @@ def parse_orders_input orders_input
 		arr2 = [id, cnt]
 		arr.push arr2
 	end
-
 	return arr
 end
